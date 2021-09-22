@@ -1,0 +1,147 @@
+:root {
+    --navy: #0c1042;
+    --purple: #1b0c42;
+
+    --test: #181a2b;
+
+    --sand: #f2efea;
+
+    --fyrkant-size: 150px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body, a, ul, li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+
+header {
+    display: grid;
+    place-items: center;
+}
+
+#logo {
+    font-family: 'Marcellus SC', serif;
+    font-size: 30px;
+    padding: 50px 0;
+}
+
+hr {
+    border-top: 1px solid rgb(194, 194, 194);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.headline {
+    display: grid;
+    place-items: center;
+    padding: 25px 0 30px 0;
+}
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+    font-size: 37px;
+    color: #79756e;
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    font-size: 150px;
+    font-weight: 600;
+    line-height: 0;
+    color: rgb(201, 176, 147);
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display SC', serif; */
+}
+
+main {
+    display: grid;
+    margin: 0 auto;
+    grid-template: minmax(20vh, auto) / 50% 35%;
+    justify-content: center;
+    row-gap: 20vh;
+    background-color: rgb(22, 22, 65);
+    padding: 5vh 0 0 0;
+
+}
+
+.info {
+    position: relative;
+    display: grid;
+    place-content: center;
+    background-color: rgb(13, 13, 41);
+}
+
+.quote {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 47px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.info-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.info p {
+    width: 250px;
+    color: white;
+    line-height: 19px;
+} 
+
+.large-img {
+    position: relative;
+    height: 800px;
+    background-color: burlywood;
+    background-image: url('../img/karsten-winegeart-Y0nU6dqDCbY-unsplash.jpg');
+    background-size: cover;
+}
+
+.fyrkant {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+    left: calc(var(--fyrkant-size) / -2);
+    height: calc(var(--fyrkant-size) - 5px);
+    width: var(--fyrkant-size);
+    background-color: rgb(201, 176, 147);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.fyrkant div {
+    position: relative;
+    bottom: 5px;
+    color: white;
+}
+
+.fyrkant img {
+    width: 70%;
+    opacity: 0.5;
+
+}
+
+
